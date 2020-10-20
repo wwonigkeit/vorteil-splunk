@@ -8,7 +8,7 @@ https://medium.com/@wilhelm.wonigkeit/splunk-without-an-os-just-vorteil-7abaaf45
 
 This package contains the Vorteil configuration files, libraries and some shell commands needed for Splunk and the "splunk start" command. The package DOES NOT contain the Splunk binaries or tarballs. This would need to be downloaded from the Splunk website:
 
-![alt text](relative/path/to/img.jpg?raw=true "Title")
+![alt text](download.png?raw=true "Splunk Download")
 
 ## Using the Vorteil machine configuration
 
