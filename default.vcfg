@@ -1,0 +1,25 @@
+[[program]]
+  binary = "/opt/splunk/bin/splunk"
+  args = "start --no-prompt --answer-yes --accept-license"
+  env = ["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","SPLUNK_HOME=/opt/splunk"]
+  privilege = "superuser"
+  strace = false
+
+[[network]]
+  ip = "dhcp"
+  tcp = ["8000","9997","8089"]
+
+[[nfs]]
+  mount = "/opt/splunk/var/lib/splunk"
+  server = "172.31.47.165:/opt/splunk/var/lib/splunk"
+  options = "nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport"
+
+[system]
+  max-fds = 65535
+  user = "vorteil"
+  filesystem = "xfs"
+
+[vm]
+  cpus = 1
+  ram = "1024 MiB"
+  disk-size = "+512 MiB"
