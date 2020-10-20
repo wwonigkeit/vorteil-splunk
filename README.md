@@ -14,8 +14,9 @@ This package contains the Vorteil configuration files, libraries and some shell 
 
 1. Install the Vorteil Studio
 2. Clone the repo to an appropriate directory on your local machine
-3. Unzip the Splunk tarball to the /opt/ directory
-4. Copy the user-seed.conf file in the root directory of the repo to /opt/splunk/etc/system/local/user-seed.conf
-5. Run the machine using "vorteil run"
+3. Edit the default.vcfg file with the appropriate NFS share data (or remove the NFS configuration to run on local disk)
+4. Unzip the Splunk tarball to the /opt/ directory
+5. Copy the user-seed.conf file in the root directory of the repo to /opt/splunk/etc/system/local/user-seed.conf
+6. Run the machine using "vorteil run"
 
 If you have any questions just ask!
